@@ -1,0 +1,676 @@
+﻿<!DOCTYPE html>
+@{
+    Layout = null;
+
+}
+
+@section Scripts {
+    <script>
+        document.getElementById("myButton").addEventListener("click", function () {
+            // İşlemi gerçekleştirme kodları burada olacak
+
+            // İşlem tamamlandıktan sonra uyarı mesajı gösterme
+            alert("İşlem tamamlandı!");
+        });
+    </script>
+}
+@using MyWebSite.UI.Entities
+@model MyWebSite.UI.Entities.Iletisim
+<html lang="en">
+
+<head>
+    <title>Hızır Furkan Yaşar</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Arsha Bootstrap Template - Index</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="~/assets/img/favicon.png" rel="icon">
+    <link href="~/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="~/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="~/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="~/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="~/assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: Arsha
+    * Updated: Jul 27 2023 with Bootstrap v5.3.1
+    * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center">
+
+            <h1 class="logo me-auto"><a href="Index">Hızır Furkan Yaşar</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><~/img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Anasayfa</a></li>
+                    <li><a class="nav-link scrollto" href="#about">Hakkımda</a></li>
+                    <li><a class="nav-link scrollto" href="#why-us">Neden Ben?</a></li>
+                    <li><a class="nav-link scrollto" href="#skills">Yeteneklerim</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Hizmetler</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Sosyal Medya</a></li>
+                    <li><a class="nav-link   scrollto" href="#faq">Sıkça Sorulan Sorular</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">İletişim</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+                    <h1>
+                        Kodlarla Dans: Dijital Dünyada Ben
+                    </h1>
+                    <h2>
+                        Merhaba!
+
+                        Ben, dijital dünyada kendi izimi bırakmaya adanmış bir yazılım geliştiriciyim. Klavyenin tuşları benim en yakın dostlarım ve kodlarla dans etmek, tutkulu bir şekilde yaptığım şey.
+
+                        Deneyim ve projeler sayesinde dijital evrende kendi hikayemi yazıyorum. Her bir satır kod, benim için yeni bir maceranın kapısını aralıyor. İşlevselliği şekillendirmek, tasarımı hayata geçirmek ve kullanıcı deneyimini mükemmelleştirmek için buradayım.
+                    </h2>
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="#about" class="btn-get-started scrollto">Keşfetmeye devam et</a>
+                        <a href="https://www.youtube.com/watch?v=pL0bxewHbjo" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Tanıtım Videomuzu İzle</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="~/assets/img/hero-img.png" class="img-fluid animated" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section><!-- End Hero -->
+
+    <main id="main">
+
+        <!-- ======= Clients Section ======= -->
+        <section id="clients" class="clients section-bg">
+            <div class="container">
+
+                <div class="row" data-aos="zoom-in">
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="~/assets/img/clients/client-1.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="~/assets/img/clients/client-2.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="~/assets/img/clients/client-3.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="~/assets/img/clients/client-4.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="~/assets/img/clients/client-5.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="~/assets/img/clients/client-6.png" class="img-fluid" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Cliens Section -->
+        <!-- ======= About Us Section ======= -->
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>GELİŞTİRİCİ OLARAK BEN</h2>
+                </div>
+
+                <div class="row content">
+                    <div class="col-lg-6">
+                        <p>
+                            Merhaba! Ben, dijital dünyada sizi en iyi şekilde temsil etmeyi amaçlayan bir geliştiriciyim.
+                            <br />
+                            <br />
+                            Ben, dijital dünyada kendi izimi bırakmaya adanmış bir yazılım geliştiriciyim. Klavyenin tuşları benim en yakın dostlarım ve kodlarla dans etmek, tutkulu bir şekilde yaptığım şey.
+                            <br />
+                            <br />
+                        </p>
+                        <ul>
+                            <li><i class="ri-check-double-line"></i> Teknolojiyi Sanata Dönüştürme</li>
+                            <li><i class="ri-check-double-line"></i> Kullanıcı Dostu ve Etkileşimli Tasarım</li>
+                            <li><i class="ri-check-double-line"></i> Güvenli ve İleri Düzey Çözümler</li>
+                            <li><i class="ri-check-double-line"></i> Verilerle Yaratıcı Yaklaşımlar</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0">
+                        <p>
+                            Ben, dijital dünyada fikirlerinizi gerçeğe dönüştürmek için buradayız. Geliştirdiğimiz projelerle işinizi bir adım öne taşıyarak, kullanıcı deneyimini en üst düzeye çıkarıyoruz.
+                        </p>
+                        <p>
+                            17 yaşımda Bankacılık sektörüyle atıldığım bu yenilikçi dünyanın bir parçası olma yolundaki merdivenlere giderken...
+                        </p>
+                        <a href="Ozgecmis" class="btn-learn-more">Özgeçmişim</a>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- Geliştirici Olarak Biz Bölümü Sonu -->
+        <!-- ======= Why Us Section ======= -->
+        <section id="why-us" class="why-us section-bg">
+            <div class="container-fluid" data-aos="fade-up">
+
+                <div class="row">
+
+                    <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-1">
+
+                        <div class="content">
+                            <h3><strong>Neden Ben?</strong> Geliştirici Olarak Sunduğum Avantajlar</h3>
+                            <p>
+                                Dijital dünyada işimi genişletmek ve kullanıcı deneyimini zirveye taşımak için buradayım. Kodların gücüyle işleri kolaylaştırıyorum, çözümler üretiyorum ve işimi öne çıkarıyorum. Müşteri memnuniyeti her zaman önceliğimdir.
+                            </p>
+                        </div>
+
+                        <div class="accordion-list">
+                            <ul>
+                                <li>
+                                    <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Özelleştirilmiş Teknoloji Çözümleri <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                    <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                                        <p>
+                                            Her işletmenin ihtiyaçları farklıdır. Özelleştirilmiş teknoloji çözümleri sunarak, benzersiz gereksinimleri karşılıyorum ve işimi dijital dünyada öne çıkarıyorum.
+                                            Her işletmenin ihtiyaçları farklıdır. Özelleştirilmiş teknoloji çözümleri sunarak, benzersiz gereksinimleri karşılıyorum ve işimi dijital dünyada öne çıkarıyorum.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Kullanıcı Merkezli Arayüz Tasarımı <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                    <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                                        <p>
+                                            Kullanıcılarımın ihtiyaçları ve deneyimleri benim için önemlidir. Kullanıcı merkezli arayüz tasarımıyla, etkileyici ve kullanıcı dostu platformlar oluşturarak, dijital dünyada daha fazla etkileşim sağlıyorum.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Güvenliğe Odaklı Yaklaşım <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                    <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                                        <p>
+                                            Müşteri güvenliği ve veri koruma hassasiyetle ele alınmalıdır. Güvenli ödeme seçenekleri ve güçlü veri koruma önlemleriyle işimin ve müşterilerimin güvenliğini sağlıyorum.
+                                        </p>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("~/assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+                </div>
+
+            </div>
+        </section><!-- Geliştirici Olarak Sunduğum Avantajlar Bölümü Sonu -->
+        <!-- ======= Skills Section ======= -->
+        <section id="skills" class="skills">
+            <div class="container" data-aos="fade-up">
+
+                <div class="row">
+                    <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+                        <img src="~/assets/img/why-us.png" class="img-fluid" alt="Geliştirici Yetenekleri">
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+                        <h3>Kodların Diliyle Geliştirici Yetenekleri</h3>
+                        <p class="fst-italic">
+                            Geliştirici olarak, projelerime olan bağlılığımı ve becerilerimi kullanarak size en üst düzeyde hizmet sunuyorum.
+                        </p>
+
+                        <div class="skills-content">
+
+                            <div class="progress">
+                                <span class="skill">Web Tasarımı <i class="val">90%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="progress">
+                                <span class="skill">Frontend Geliştirme <i class="val">85%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="progress">
+                                <span class="skill">Backend Geliştirme <i class="val">90%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <span class="skill">Junior Developer olma yüzdesi :)<i class="val">99.99%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="99.99" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- Geliştirici Yetenekleri Bölümü Sonu -->
+        <section id="services" class="services section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Sunduğum Hizmetler</h2>
+                    <p>Alanımda Junior olarak çeşitli hizmetler sunmaktayım. İhtiyaçlarınıza özel çözümler üretmekteyim.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-code"></i></div>
+                            <h4><a href="#contact">Web Geliştirme</a></h4>
+                            <p>Fonksiyonel ve etkili web siteleri geliştirerek dijital varlığınızı güçlendiriyorum.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-data"></i></div>
+                            <h4><a href="#contact">Veri Analitiği</a></h4>
+                            <p>Verileri analiz ederek bilgiye dayalı stratejiler oluşturmanıza yardımcı oluyorum.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-headphone"></i></div>
+                            <h4><a href="#contact">Teknik Destek</a></h4>
+                            <p>Teknik sorunlarınızı çözerek işlerinizin kesintisiz şekilde ilerlemesini sağlıyorum.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-rocket"></i></div>
+                            <h4><a href="#contact">Stratejik Danışmanlık</a></h4>
+                            <p>İşiniz için özelleştirilmiş stratejiler ve rehberlik sunarak başarıya giden yolda size eşlik ediyorum.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- Hizmetler Bölümü Sonu -->
+        <!-- ======= İşbirliği Bölümü ======= -->
+        <section id="cta" class="cta">
+            <div class="container" data-aos="zoom-in">
+
+                <div class="row">
+                    <div class="col-lg-9 text-center text-lg-start">
+                        <h3>İşbirliği Yapalım</h3>
+                        <p>Kodlarla dolu dünyama hoş geldiniz! En son projelerimi inceleyerek neler başarabileceğimi görün. Birlikte çalışarak dijital hedeflerinizi hayata geçirelim.</p>
+                    </div>
+                    <div class="col-lg-3 cta-btn-container text-center">
+                        <a class="cta-btn align-middle" href="https://github.com/hfurkanyasar">Projeleri İncele</a>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- İşbirliği Bölümü Sonu -->
+        <!-- ======= Team Section ======= -->
+        <section id="team" class="team section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Sosya Medya Hesaplarım</h2>
+                    <p>Sosyal medya platformlarında paylaştığım içeriklerim. Beni daha yakından tanıyın!</p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="member d-flex align-items-start">
+                            <div class="pic"><img src="~/assets/img/ed3425f6-b484-4913-b66e-5b77312365eb.jpg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>İnstagram</h4>
+                                <span>Günlük Hayatımı Paylaşıyorum 📸</span>
+                                <p>Anılarımı Keşfetmeye Davet Ediyorum ✨</p>
+                                <div class="social">
+                                    <br />
+                                    <a href="https://www.instagram.com/h.furkanyasar/"><i class="ri-instagram-fill"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="member d-flex align-items-start">
+                            <div class="pic"><img src="~/assets/img/team/63f3a6fb-5b66-4609-8c9b-d39bbf3811c0.jpg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Linkedin</h4>
+                                <span>Profesyonel Ağımı Genişletiyorum 🌐</span>
+                                <p>Benimle Bağlantı Kurun ve Bilgi Paylaşımına Katılın 🚀</p>
+                                <div class="social">
+                                    <a href="https://www.linkedin.com/in/h%C4%B1z%C4%B1r-furkan-ya%C5%9Far-767182258/"> <i class="ri-linkedin-box-fill"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="member d-flex align-items-start">
+                            <div class="pic"><img src="~/assets/img/team/56f0b4db-b157-4499-8677-494b7bf6f44f.jpg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Twitter</h4>
+                                <span>Gündemden Haberler ve Düşünceler 💬</span>
+                                <p>Paylaşımlarımı Takip Etmek İçin Beklerim 🐦</p>
+                                <div class="social">
+                                    <a href="https://twitter.com/hfurkanyasar"><i class="ri-twitter-fill"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="member d-flex align-items-start">
+                            <div class="pic"><img src="~/assets/img/dd24cf0f-eb30-45b7-a3ec-a758a639b8bf.jpg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>GitHub</h4>
+                                <span>Kodlama ve Projeler 💻</span>
+                                <p>Kodlarımı ve Projelerimi Paylaşmaktan Keyif Alıyorum 🚀</p>
+                                <div class="social">
+                                    <a href="https://github.com/hfurkanyasar"><i class="ri-github-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Team Section -->
+        <!-- ======= Frequently Asked Questions Section ======= -->
+        <section id="faq" class="faq section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Sıkça Sorulan Sorular</h2>
+                    <p>İş ve hizmetlerimle ilgili sıkça sorulan bazı soruları aşağıda bulabilirsiniz. Daha fazla sorunuz varsa, lütfen iletişime geçmekten çekinmeyin!</p>
+                </div>
+
+                <div class="faq-list">
+                    <ul>
+                        <li data-aos="fade-up" data-aos-delay="100">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Hangi teknolojilere özellikle hakimsiniz? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                                <p>
+                                    HTML, CSS,c#,EntitiyFramework,MVC,MVC Core ve JavaScript ve çeşitli ön yüz ve arka yüz çerçeveleri dahil olmak üzere geniş bir teknoloji yelpazesinde Junior bir gelişime açık Developerim.Her geçen gün günümü programlamaya devam ediyorum.:)
+                                </p>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="200">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Hata ayıklama ve sorun giderme konusunda yardımcı olabilir misiniz? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                                <p>
+                                    Elbette! Kod ve uygulamalardaki teknik sorunları teşhis etme ve çözme konusunda seve seve yardımcı olabilirim.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="300">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Kod incelemesi ve iyileştirmeleri sunuyor musunuz? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                                <p>
+                                    Belki yarın belki yarından da yakın...
+                                </p>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="400">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">İşbirliği için nasıl iletişime geçebilirim? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                                <p>
+                                    İşbirliği için her zaman açığım. Web sitemdeki iletişim formu veya e-posta aracılığıyla bana ulaşmaktan çekinmeyin!
+                                </p>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="500">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Proje planlaması için danışmanlık sunuyor musunuz? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                                <p>
+                                    Hayır, ama bunun için çok iyi birini tanıyorum :)
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </section><!-- Sıkça Sorulan Sorular Bölümü Sonu -->
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>İLETİŞİM</h2>
+                    <p>Bana ulaşın ve sorularınızı iletmek için aşağıdaki bilgileri kullanabilirsiniz. Size yardımcı olmaktan mutluluk duyarız.</p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-5 d-flex align-items-stretch">
+                        <div class="info">
+                            <div class="address">
+                                <i class="bi bi-geo-alt"></i>
+                                <h4>Adres:</h4>
+                                <p>Ayazağa Mah. Kemerburgaz Cad. Vadi İstanbul Park sitesi 7A Blok (BİLİŞİM VADİSİ BİNASI), Kat 14 Sarıyer/İSTANBUL</p>
+                            </div>
+
+                            <div class="email">
+                                <i class="bi bi-envelope"></i>
+                                <h4>E-posta:</h4>
+                                <p>hfurkanyasar@gmail.com</p>
+                            </div>
+
+                            <div class="phone">
+                                <i class="bi bi-phone"></i>
+                                <h4>Telefon:</h4>
+                                <p>+90 0536 288 0313</p>
+                            </div>
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0385330559584!2d28.984693276561714!3d41.111849513040255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab54b7efb98d5%3A0xac34d0462f5f7c92!2sBili%C5%9Fim%20Vadisi%20%C4%B0stanbul!5e0!3m2!1str!2sus!4v1693049230177!5m2!1str!2sus" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                        <form asp-action="MesajGonder" asp-controller="Anasayfa" method="post" role="form" class="form-control" id="messageForm">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="nameField">İsim</label>
+                                    <input asp-for="Ad" type="text" name="ad" class="form-control" id="nameField" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="emailField">E-posta Adresi</label>
+                                    <input asp-for="Mail" type="email" name="Mail" class="form-control" id="emailField" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subjectField">Konu</label>
+                                <input asp-for="Konu" type="text" name="Konu" class="form-control" id="subjectField" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="messageField">Mesajınız</label>
+                                <textarea asp-for="Mesaj" name="Mesaj" class="form-control" rows="8" id="messageField" required></textarea>
+                            </div>
+                            <br />
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Mesaj Gönder</button>
+                            </div>
+                        </form>
+                        <div class="text-center mt-3" id="successMessage" style="display: none;">
+                            <div class="alert alert-success">
+                                Mesajınız gönderildi. Teşekkür ederiz!
+                            </div>
+                        </div>
+                    </div>
+
+                   
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </section><!-- İletişim Bölümü Sonu -->
+
+
+    </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-newsletter">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h4>Bültenimize Katılın</h4>
+                        <p>En son haberlerimizden ve güncellemelerimizden haberdar olun.</p>
+                        <form action="#" method="post">
+                            <input type="email" name="email" placeholder="E-posta adresinizi girin" autocomplete="email">
+                            <input type="submit" value="Abone Ol">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h4>Hızır Furkan Yaşar</h4>
+                        <p>
+                            Ayazağa Mah. Kemerburgaz Cad. Vadi İstanbul Park sitesi 7A Blok <br>
+                            (BİLİŞİM VADİSİ BİNASI) Kat 14 <br>
+                            Sarıyer/İSTANBUL <br><br>
+                            <strong>Telefon:</strong> +90 0536 288 0313 <br>
+                            <strong>E-posta:</strong> hfurkanyasar@gmail.com<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Faydalı Bağlantılar</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Ana Sayfa</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Hakkımızda</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Hizmetler</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Hizmet Şartları</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Gizlilik Politikası</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Hizmetlerimiz</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Tasarımı</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Geliştirme</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Ürün Yönetimi</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Pazarlama</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Grafik Tasarım</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Sosyal Ağlarımız</h4>
+                        <p>Güncel bilgilerden haberdar olmak için takipte kalın.</p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="github"><i class="bx bxl-github"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                &copy; Tüm Hakları Saklıdır <strong><span>Hızır Furkan Yaşar</span></strong>
+            </div>
+            <div class="credits">
+                <!-- Footerdaki tüm bağlantılar değiştirilmeden kalmalıdır. -->
+                <!-- Yalnızca pro sürümü satın aldıysanız bağlantıları silebilirsiniz. -->
+                <!-- Lisans bilgisi: https://bootstrapmade.com/license/ -->
+                <!-- Çalışan PHP/AJAX iletişim formuyla pro sürümünü satın alın: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+                Tasarlayan: <a href="https://hizirfurkanyasar.com/">hizirfurkanyasar.com</a>
+            </div>
+        </div>
+    </footer><!-- Sayfa Altı -->
+
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="~/assets/vendor/aos/aos.js"></script>
+    <script src="~/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="~/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="~/assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="~/assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="~/assets/js/main.js"></script>
+
+</body>
+
+</html>
