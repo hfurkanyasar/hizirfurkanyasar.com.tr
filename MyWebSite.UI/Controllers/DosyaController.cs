@@ -15,8 +15,8 @@ namespace MyWebSite.UI.Controllers
 
         public IActionResult Indir()
         {
-            string dosyaAdi = "CV Hızır Furkan Yaşar.pdf"; // İndirilen dosyanın adını belirtin
-            string dosyaYolu = @"C:\Users\Hızır Furkan\Documents\CV Hızır Furkan Yaşar.pdf"; // Dosya yolunu düzenleyin
+            string dosyaAdi = "CV Hızır Furkan Yaşar.pdf"; 
+            string dosyaYolu = @"C:\Users\Hızır Furkan\Documents\CV Hızır Furkan Yaşar.pdf"; 
 
             byte[] dosyaBytes = System.IO.File.ReadAllBytes(dosyaYolu);
 
